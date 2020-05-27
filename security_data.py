@@ -14,7 +14,7 @@ class DatabaseModel():
         #              database=database,
         #              charset=charset)
         self.db = pymysql.connect(user="worker",
-                                  passwd="jv1993814",
+                                  passwd="******",
                                   database="security",
                                   charset="utf8")
         self.cur = None
