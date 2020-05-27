@@ -1,0 +1,130 @@
+/* --------------------全局样式-------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'YouYuan',Arial, Helvetica, sans-serif;
+    background-color: #f1f3f4;
+}
+/* 去除元素原有的内外边距 */
+ul,li,p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+/* 去除超链接的下划线 */
+a,a:hover{
+    text-decoration: none;
+}
+/* 去除文本框默认的选中框 */
+input{
+    border: none;
+    outline: none;
+}
+/* 浮动相关的类 */
+.lf{
+    float: left;
+}
+.rt{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+/* ----------------------头部样式---------------------- */
+#top{
+    width: 1000px;
+    min-height: 60px;
+    margin: 20px auto;
+    margin-bottom: 35px;
+    position: relative;
+}
+#top>#logo>a>img{
+    width: 180px;
+    border-radius: 5px;
+}
+#top>#nav{
+    width: 740px;
+    height: 70px;
+    line-height: 70px;
+}
+#top>#nav>div{
+    font-size: 28px;
+    color: rgb(50, 50, 50);
+    margin: 5px 15px;
+    padding-bottom: 12px;
+    display: inline;
+    cursor: pointer;
+}
+.isActive{
+    border-bottom: 5px solid darkcyan;
+}
+.menushow{
+    border-bottom: 5px solid crimson;
+}
+.menuhide{
+    border-bottom: 5px solid transparent;
+}
+
+/* ----------------------主体样式---------------------- */
+#main{
+    width: 100%;
+    height: 500px;
+    background-image: url("/static/imgs/background/background-pic01.jpg");
+    background-size: cover;
+}
+#main>#background{
+    width: 1000px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.unovered{
+    background-color: #4395ff;
+}
+
+.overed{
+    background-color: #3485FB;
+}
+
+.checked{
+    background-color: darkcyan;
+}
+
+/* 人员清单样式 */
+#main>#background>#list{
+    width: 560px;
+    height: 480px;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgba(0, 139, 139, 0.32);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#main>#background>#list>.items-group{
+    /* border: 1px solid red; */
+    height: 70px;
+    margin-top: 5px;
+    /* background-image: url("/static/imgs/icos/us.png"); */
+    background-position: 50px 50%;
+    background-size: 56px;
+    background-repeat: no-repeat;
+}
+.male{
+    background-image: url("/static/imgs/icos/us_m.png");
+}
+.female{
+    background-image: url("/static/imgs/icos/us_f.png");
+}
+
+#main>#background>#list>.items-group>p{
+    font-size: 36px;
+    font-family: "宋体";
+    color: #fff;
+    text-align: center;
+    line-height: 64px;
+}

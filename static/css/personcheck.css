@@ -1,0 +1,189 @@
+/* --------------------全局样式-------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'YouYuan',Arial, Helvetica, sans-serif;
+    background-color: #f1f3f4;
+}
+/* 去除元素原有的内外边距 */
+ul,li,p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+/* 去除超链接的下划线 */
+a,a:hover{
+    text-decoration: none;
+}
+/* 去除文本框默认的选中框 */
+input{
+    border: none;
+    outline: none;
+}
+/* 浮动相关的类 */
+.lf{
+    float: left;
+}
+.rt{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+/* ----------------------头部样式---------------------- */
+#top{
+    width: 1000px;
+    min-height: 60px;
+    margin: 20px auto;
+    margin-bottom: 35px;
+    position: relative;
+}
+#top>#logo>a>img{
+    width: 180px;
+    border-radius: 5px;
+}
+#top>#nav{
+    width: 740px;
+    height: 70px;
+    line-height: 70px;
+}
+#top>#nav>div{
+    font-size: 28px;
+    color: rgb(50, 50, 50);
+    margin: 5px 15px;
+    padding-bottom: 12px;
+    display: inline;
+    cursor: pointer;
+}
+.isActive{
+    border-bottom: 5px solid darkcyan;
+}
+.menushow{
+    border-bottom: 5px solid crimson;
+}
+.menuhide{
+    border-bottom: 5px solid transparent;
+}
+
+/* ----------------------主体样式---------------------- */
+#main{
+    width: 100%;
+    height: 500px;
+    background-image: url("/static/imgs/background/background-pic01.jpg");
+    background-size: cover;
+}
+#main>#background{
+    width: 1000px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.unovered{
+    background-color: #4395ff;
+}
+
+.overed{
+    background-color: #3485FB;
+}
+
+.checked{
+    background-color: darkcyan;
+}
+
+/* 拍照,截屏样式 */
+#main>#background>#video{
+    width: 560px;
+    height: 480px;
+    margin: 10px auto;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgba(200, 200, 200, 0.32);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#main>#background>#video>#openCamera{
+    width: 200px;
+    height: 48px;
+    color: #fff;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* 调取摄像头时的样式 */
+#main>#background>#video>#takeVideo{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform:  translate(-50%,0);
+}
+#main>#background>#video>#takeVideo>video{
+    border-radius: 5px;
+}
+#main>#background>#video>#takeVideo>#takeShot{
+    border-radius: 5px;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;    
+}
+
+/* 拍好照片时的样式 */
+#main>#background>#video>#pic{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform:  translate(-50%,0);
+}
+#main>#background>#video>#pic>img{
+    border-radius: 5px;
+    width: 550px;
+    height: 415px;
+}
+#main>#background>#video>#pic>.picOption{
+    border-radius: 5px;
+    width: 220px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 26px;
+    margin-top: 5px;
+    display: inline-block;
+    cursor: pointer;    
+}
+
+/* 提交照片后的样式 */
+#main>#background>#video>#feedback{
+    width: 480px;
+    height: 360px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#main>#background>#video>#feedback>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hide{
+    display: none;
+}
